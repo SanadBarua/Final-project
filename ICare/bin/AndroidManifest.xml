@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ftfl.icare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <!-- Accessing camera hardware -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sicare_icon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".UserProfileCreateActivity" >
+        </activity>
+        <activity android:name=".UserProfileViewActivity" >
+        </activity>
+        <activity android:name=".UserProfileUpdateActivity" >
+        </activity>
+        <activity android:name=".DietChartCreateActivity" >
+        </activity>
+        <activity android:name=".DietChartListActivity" >
+        </activity>
+        <activity android:name=".DietChartUpdateActivity" >
+        </activity>
+        <activity android:name=".VaccinationCreateActivity" >
+        </activity>
+        <activity android:name=".VaccinationListActivity" >
+        </activity>
+        <activity android:name=".VaccinatioUpdateActivity" >
+        </activity>
+        <activity android:name=".DoctorProfileCreateActivity" >
+        </activity>
+        <activity android:name=".DoctorProfileListActivity" >
+        </activity>
+        <activity android:name=".DoctorProfileDetailActivity" >
+        </activity>
+        <activity android:name=".DoctorProfileUpdateActivity" >
+        </activity>
+        <activity android:name=".MedicalHistoryCreateActivity" >
+        </activity>
+        <activity android:name=".MedicalHistoryListActivity" >
+        </activity>
+        <activity android:name=".MedicalHistoryViewActivity" >
+        </activity>
+        <activity android:name=".MedicalHistoryUpdateActivity" >
+        </activity>
+    </application>
+
+</manifest>
